@@ -1,0 +1,59 @@
+.CardContainer{
+    width: 214px;
+    height: 303px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.CardContainer .card{
+    height: 267px;
+    background-color: #FAFAFA;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    z-index: 1;
+}
+.SmallCardContainer{
+    width: 168px;
+    height: 232px;
+    background-color: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SmallCardContainer .card{
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    z-index: 1;
+}
+.CardContainer h1{
+    color: red;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.card img{
+    width: 54px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: content-box;
+    border-radius: 50%;
+}
+.card h3{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+
+}

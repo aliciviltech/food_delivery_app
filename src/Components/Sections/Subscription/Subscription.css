@@ -1,0 +1,79 @@
+.Subscription{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #FFEFEC;
+}
+.Subscription .textSide{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Subscription .textSide h1{
+    font-size: 40px;
+}
+.Subscription .textSide p{
+    width: 80%;
+}
+.Subscription .inputSide{
+    height: fit-content;
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Subscription .inputSide .emailInput{
+    width: 100%;
+}
+.Subscription .inputSide input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.Subscription .inputSide button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media screen and (max-width: 1024px) {
+    .Subscription{
+        flex-direction: column;
+    }
+    .Subscription .textSide{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+    .Subscription .inputSide{
+        text-align: center;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .Subscription .textSide h1{
+        font-size: 30px;
+    }
+    .Subscription .textSide p{
+        width: 100%;
+    }
+    .Subscription .inputSide{
+        width: 95%;
+        background-color: transparent;
+        gap: 20px;
+    }
+    .Subscription .inputSide .emailInput{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Subscription .inputSide button{
+        position: static;
+    }
+}

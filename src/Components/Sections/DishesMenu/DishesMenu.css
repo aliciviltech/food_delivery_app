@@ -1,0 +1,76 @@
+.DishesMenu{
+    width: 80%;
+    margin: auto;
+}
+.DishesMenu .row1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+.DishesMenu .row2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+.DishesMenu .description{
+    width: 30%;
+}
+.DishesMenu .row1 .description .image{
+    text-align: right;
+}
+.DishesMenu .row1 .description img{
+    width: 170px;
+}
+.DishesMenu .row2 .description img{
+    width: 61px;
+}
+.DishesMenu .cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.DishesMenu>p{
+    width: 622px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+    .DishesMenu .row1{
+        /* display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px; */
+        flex-direction: column;
+    }
+    .DishesMenu .row2{
+        flex-direction: column;
+    }
+    .DishesMenu .description{
+        width: 60%;
+    }
+    .DishesMenu>p{
+        width: unset;
+    }
+}
+@media screen and (max-width: 600px) {
+    .DishesMenu{
+        width: 100%;
+    }
+    .DishesMenu .description{
+        width: 90%;
+    }
+    .DishesMenu .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+}

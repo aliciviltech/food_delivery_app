@@ -1,0 +1,72 @@
+.Header{
+    max-width: 93%;
+    margin: auto;
+    margin-top: 62px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Header .logo img{
+    width: 50px;
+}
+.anchors{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.buttons{
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+.menuBars{
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .Header{
+        position: relative;
+    }
+    .anchors{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        width: 200px;
+        background-color: #ffffff;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: -400px;
+        transition: 0.3s;
+    }
+    .active{
+        right: 0;
+        transition: 0.3s;
+    }
+    .buttons{
+        margin-left: unset;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menuBars{
+        display: block;
+    }
+}
+@media screen and (max-width:430px){
+    .anchors{
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: -400px;
+        transition: 0.3s; */
+    }
+}

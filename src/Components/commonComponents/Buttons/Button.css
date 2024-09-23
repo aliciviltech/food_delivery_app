@@ -1,0 +1,33 @@
+
+.PrimaryButton{
+    padding: 15px 30px;
+    background-color:var(--primaryColor);
+    color: #ffffff;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+}
+.SecondaryButton{
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.TertiaryButton{
+    width: 182px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    gap: 10px;
+    cursor: pointer;
+}
+.TertiaryButton img{
+    width: 31px;
+}
+.TertiaryButton .text p{
+    font-size: 12px;
+    line-height: 12px;
+}

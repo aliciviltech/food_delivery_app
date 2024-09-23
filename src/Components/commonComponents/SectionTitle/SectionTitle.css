@@ -1,0 +1,19 @@
+.SectionTitle{
+    width: clamp(300px 55% 650px);
+    margin: auto;
+    font-size: 46px;
+    text-align: center;
+    padding: 50px 0 0 0 ;
+}
+.SectionTitle span{
+    color: red;
+}
+@media screen and (max-width: 600px) {
+    .SectionTitle{
+        width: clamp(300px 55% 650px);
+        margin: auto;
+        font-size: 30px;
+        text-align: center;
+        padding: 50px 0 0 0 ;
+    }
+}
